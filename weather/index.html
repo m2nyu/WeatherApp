@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">WELCOME TO THE FORECAST</h1>
+            <p class="byline">by manyu</p>
+        </div>
+        <p class="scroll-prompt">Scroll down to begin</p>
+    </header>
+
+    <section class="info-section">
+        <h2>What Is Weather Forecasting?</h2>
+        <p>This dashboard fetches real-time data to show you the current conditions and the expected pattern for the next few days, helping you plan ahead.</p>
+    </section>
+
+    <main class="container">
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Enter city name...">
+            <button id="search-button">Search</button>
+        </div>
+
+        <div class="loader" id="loader"></div>
+
+        <section id="results-section" class="weather-section">
+            <h2 id="results-city-name">...</h2>
+            
+            <div id="current-weather-display"></div>
+            
+            <h3 id="forecast-title">5-Day Forecast</h3>
+            <div id="forecast-cards"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
