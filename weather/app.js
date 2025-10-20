@@ -3,7 +3,7 @@ const cityInput = document.getElementById('city-input');
 const loader = document.getElementById('loader');
 
 // --- Your API Key ---
-const apiKey = '19103c69a69a8909e16c36121a02da6d'; // <<< PASTE YOUR KEY HERE
+const apiKey = 'API KEY'; // <<< PASTE YOUR KEY HERE
 
 searchButton.addEventListener('click', () => {
     const cityName = cityInput.value;
@@ -146,4 +146,5 @@ function displayResults(currentData, forecastData) {
     // 6. Finally, make the whole results section visible
     resultsSection.style.display = 'block';
     forecastTitle.style.display = 'block';
+
 }
